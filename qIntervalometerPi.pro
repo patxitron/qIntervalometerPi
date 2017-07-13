@@ -4,15 +4,11 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui widgets
+CONFIG   += c++11
 
-greaterThan(QT_MAJOR_VERSION, 4) {
-    QT += widgets
-    QCONFIG += c++11
-}
-
-TARGET = qIntervalometerPi
-TEMPLATE = app
+TARGET    = qIntervalometerPi
+TEMPLATE  = app
 
 CONFIG(debug, debug|release):DEFINES+=DEBUG
 
